@@ -1,8 +1,12 @@
 import React from 'react';
 import { Card, Col, Image, Row } from 'react-bootstrap';
+import LearnYourSelfItem from '../LearYourSelfItem/LearnYourSelfItem';
+import useData from '../useData/useData';
 import './LearnYourSelf.css';
+import bg from '../../image/banner.png'
 
 const LearnYourSelf = () => {
+    const [items] = useData();
     return (
         <div className="card-design">
             <Card className="container card-design my-5 py-5 border-0 text-center">
@@ -16,11 +20,18 @@ const LearnYourSelf = () => {
                 </div>
 
 
-                <Row xs={1} md={3} className="g-4">
+                <Row xs={1} md={4} className="g-3 mt-5">
                     {
+                        items.map(item => <LearnYourSelfItem
+                            key={item.key}
+                            item={item}
 
+                        />)
                     }
                 </Row>
+                <div className="mt-5">
+                    <Image className="w-50" src={bg}></Image>
+                </div>
             </Card>
         </div>
     );
