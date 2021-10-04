@@ -9,7 +9,7 @@ const LearnYourSelf = () => {
     const [items] = useData();
     return (
         <div className="card-design">
-            <Card className="container card-design my-5 py-5 border-0 text-center">
+            <Card className="container card-design pt-5 border-0 text-center">
 
                 <h3 className="color">শেখো  <span className="text-red"> নিজের ইচ্ছেমতো!</span></h3>
                 <Card.Text className="pt-3 text-secondary">

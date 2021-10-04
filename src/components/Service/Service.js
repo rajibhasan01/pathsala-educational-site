@@ -4,13 +4,16 @@ import Module from '../Module/Module';
 import './Service.css';
 
 const Service = (props) => {
-    const { course, image, title } = props.item;
+    const { course, image, title, price } = props.item;
     return (
         <Col>
             <Card className="card-color">
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
-                    <Card.Title className="text-center fw-bold">{title}</Card.Title>
+                    <Card.Title className="fw-bold d-flex justify-content-around">
+                        <span>{title}</span>
+                        <span className="text-muted">{price}TK</span>
+                    </Card.Title>
                     <Card.Text className="d-flex flex-wrap">
                         {
                             course?.map((cr, i) => <Module

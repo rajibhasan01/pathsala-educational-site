@@ -8,7 +8,7 @@ const LearnYourSelfItem = (props) => {
         <Col>
             <Card className="bg-white py-3 rounded">
                 <div>
-                    <i class={icon}> </i>
+                    <i className={icon}> </i>
                 </div>
                 <div>
                     <h6> {number} {article}</h6>

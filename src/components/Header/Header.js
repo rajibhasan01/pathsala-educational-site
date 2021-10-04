@@ -21,10 +21,9 @@ const Header = () => {
 
                             <li><NavLink to="/skills" className="text-decoration-none text-dark" activeClassName="selected"><i className="fas fa-rocket"></i> Skills</NavLink></li>
 
-                            <li><NavLink to="/about" className="text-decoration-none text-dark" activeClassName="selected"><i className="fas fa-info-circle"></i> About</NavLink></li>
-
                             <li><NavLink to="/dashboard" className="text-decoration-none text-dark" activeClassName="selected"><i className="fas fa-clipboard-list"></i> Dashboard</NavLink></li>
 
+                            <li><NavLink to="/about" className="text-decoration-none text-dark" activeClassName="selected"><i className="fas fa-info-circle"></i> About</NavLink></li>
 
                         </ul>
                     </Nav>

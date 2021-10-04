@@ -1,0 +1,46 @@
+[
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Bangla_Goddo.png",
+		"subject": "বাংলা ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Bangla_Grammar.png",
+		"subject": "বাংলা ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/English_First.png",
+		"subject": "ইংরেজি ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/English_Second.png",
+		"subject": "ইংরেজি ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/ICT.png",
+		"subject": "তথ্য ও প্রযুক্তি"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Physics_First.png",
+		"subject": "পদার্থবিজ্ঞান ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Physics_Second.png",
+		"subject": "পদার্থবিজ্ঞান ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Chemistry_First.png",
+		"subject": "রসায়ন ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Chemistry_Second.png",
+		"subject": "রসায়ন ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Biology_One.png",
+		"subject": "জীববিজ্ঞান"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Maths_Two.png",
+		"subject": "উচ্চতর গণিত"
+	}
+]

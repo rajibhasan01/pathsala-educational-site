@@ -13,7 +13,8 @@
 		"title": "SSC 2022",
 		"number": "১৩,৩৮৫+",
 		"article": "ভিডিও টিউটোরিয়াল",
-		"icon": "fab fa-youtube text-danger fw-bold fs-1 m-2"
+		"icon": "fab fa-youtube text-danger fw-bold fs-1 m-2",
+		"price": 11000
 	},
 	{
 		"key": 6,
@@ -29,7 +30,8 @@
 		"title": "HSC 2022",
 		"number": "৪৯,৫৩০+",
 		"article": "কুইজ",
-		"icon": "fas fa-file-alt text-success fw-bold fs-1 m-2"
+		"icon": "fas fa-file-alt text-success fw-bold fs-1 m-2",
+		"price": 9900
 	},
 	{
 		"key": 7,
@@ -45,7 +47,8 @@
 		"title": "Admission Course",
 		"number": "১১,১৭৫+",
 		"article": "নোট",
-		"icon": "far fa-clipboard text-warning fw-bold fs-1 m-2"
+		"icon": "far fa-clipboard text-warning fw-bold fs-1 m-2",
+		"price": 12000
 	},
 	{
 		"key": 9,
@@ -61,6 +64,7 @@
 		"title": "Free Teaching",
 		"number": "১৩,৮৫+",
 		"article": "ব্লগ",
-		"icon": "fas fa-box text-info fw-bold fs-1 m-2"
+		"icon": "fas fa-box text-info fw-bold fs-1 m-2",
+		"price": 0
 	}
 ]

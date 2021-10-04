@@ -6,6 +6,7 @@ import HomeBanner from '../HomeBanner/HomeBanner';
 import Services from '../Services/Services';
 import LearnYourSelf from '../LearnYourSelf/LearnYourSelf';
 import useData from '../useData/useData';
+import Carosoul from '../Carosoul/Carosoul';
 
 
 const property = [[accademi, 'ক্লাস ১-১২'], [admission, 'ভর্তি পরীক্ষা'], [skill, 'স্কিল ডেভেলপমেন্ট']];
@@ -18,6 +19,8 @@ const Home = () => {
             <HomeBanner property={property} />
 
             <Services items={items} />
+
+            <Carosoul />
 
             <LearnYourSelf />
 

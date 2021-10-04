@@ -1,0 +1,8 @@
+.image{
+    width: 35px;
+    border-radius: 50%;
+}
+.courseName:hover{
+    color: rgb(0, 177, 15);
+    font-weight: 400;
+}
