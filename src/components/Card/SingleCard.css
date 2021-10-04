@@ -1,0 +1,10 @@
+.card-radius:hover{
+    background-color: rgb(204, 0, 0);
+    color: white;
+}
+
+.card-radius{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}

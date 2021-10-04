@@ -1,0 +1,14 @@
+.card-design{
+    border-radius: 20px;
+    text-align: justify;
+    background-color: rgb(252, 252, 252);
+}
+
+.color{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.7);
+}
+.text-red{
+    color: rgba(255, 0, 0, 0.897);
+}
