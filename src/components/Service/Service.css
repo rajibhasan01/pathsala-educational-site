@@ -1,0 +1,18 @@
+.card-color{
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+}
+
+#hireBtn{
+    padding: 8px 18px;
+    border-radius: 7px;
+    border: 0;
+    color: white;
+    background: #1dd1a1;
+}
+#hireBtn:hover {
+    background: transparent;
+    padding: 6px 16px;
+    border: 2px solid #059770;
+    color:#0e9b75;
+}
