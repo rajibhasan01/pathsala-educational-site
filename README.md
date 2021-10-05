@@ -1,13 +1,13 @@
 # React Project Name - পাঠশালা
 
-You can learn different types of skill from this site.\
-1. SSC Preparation \
-2. HSC Preparation \
-3. Admission test \
-4. Advance Skill Development Course \
+You can learn different types of skill from this site
+1. SSC Preparation 
+2. HSC Preparation 
+3. Admission test 
+4. Advance Skill Development Course 
 
 
-For poor people there we provide a free course.\
+For poor people there we provide a free course.
 
 ### `Project Demo - with live link`
 https://assignment-rajib-hasan.netlify.app
