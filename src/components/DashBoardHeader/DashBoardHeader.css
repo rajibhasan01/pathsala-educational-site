@@ -1,0 +1,31 @@
+.btnHeader{
+    padding: 5px 25px;
+    border-radius: 20px;
+    border: 0;
+    color:#000000;
+    background: transparent;
+    text-decoration: none;
+    margin-right:3px;
+    font-weight: 500;
+}
+.btnHeader:hover {
+    background: #ff0000;
+    color: white;
+    font-weight: 500;
+}
+
+.bgColor{
+    background-color: #eeededee;
+}
+.dropDown{
+    background: #fffa65;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0px 5px;
+}
+
+.activeBtn {
+    background: #ff0000;
+    color: white;
+    font-weight: 500;
+}

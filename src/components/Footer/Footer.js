@@ -13,11 +13,11 @@ const Footer = () => {
                         <div className="card bg-transparent border border-0 pt-5" style={{ width: "18rem" }}>
                             <img src={logo} className="card-img-top w-50" alt="..." />
                             <div className="card-body text-start ps-0">
-                                <h5 className="card-title text-light">অনলাইন পাঠশালা<div className="spinner-grow golgol text-color" role="status">
+                                <h5 className="card-title text-light">অনলাইন পাঠশালা<div className="spinner-grow indicator text-color" role="status">
                                     <span className="visually-hidden"></span>
                                 </div></h5>
                                 <p className="card-text text-secondary">সমস্যার ক্ষেত্রে: ০১৭৫৪-০৬৩৭১২  (সকাল ১০টা - রাত ১০টা) <br /> অথবা মেসেজ করুন PSHelp to ২৬৯৬৯ (২৪ x ৭)</p>
-                                <a id="bttnn">ডাউনলোড</a>
+                                <a href id="bttnn">ডাউনলোড</a>
                             </div>
                         </div>
 

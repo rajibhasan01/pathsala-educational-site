@@ -7,7 +7,7 @@ const Study = (props) => {
     return (
         <Col >
             <div className="border-0 ">
-                <div className="rounded border-0 d-flex px-2 align-items-center bg-color">
+                <div className="rounded-pill border-0 d-flex align-items-center bg-color">
                     <Image className="imagelogo p-2" src={image}></Image>
                     <h6 className="fw-bold fs-5"> {subject}</h6>
                 </div>
