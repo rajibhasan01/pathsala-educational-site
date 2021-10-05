@@ -37,10 +37,78 @@
 	},
 	{
 		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Biology_One.png",
-		"subject": "জীববিজ্ঞান"
+		"subject": "জীববিজ্ঞান ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Biology_Second.png",
+		"subject": "জীববিজ্ঞান ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Maths_One.png",
+		"subject": "উচ্চতর গণিত ১ম পত্র"
 	},
 	{
 		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Maths_Two.png",
-		"subject": "উচ্চতর গণিত"
+		"subject": "উচ্চতর গণিত ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/History_First.png",
+		"subject": "ইতিহাস ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Update%20icon-20200219T075311Z-001/Update%20icon/History_Second.png",
+		"subject": "ইতিহাস ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Civics_First.png",
+		"subject": "পৌরনীতি ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Update%20icon-20200219T075311Z-001/Update%20icon/Civics_Second.png",
+		"subject": "পৌরনীতি ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/ICT.png",
+		"subject": "সুশাসন"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/BGS.png",
+		"subject": "সমাজবিজ্ঞান ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Update%20icon-20200219T075311Z-001/Update%20icon/Statistics_Second.png",
+		"subject": "সমাজবিজ্ঞান ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Geography_First.png",
+		"subject": "ভূগোল ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Geography_First.png",
+		"subject": "ভূগোল ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Logic_First.png",
+		"subject": "যুক্তিবিদ্যা ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Update%20icon-20200219T075311Z-001/Update%20icon/Logic_Second.png",
+		"subject": "যুক্তিবিদ্যা ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Economics_First.png",
+		"subject": "অর্থনীতি ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Update%20icon-20200219T075311Z-001/Update%20icon/Analytical.png",
+		"subject": "অর্থনীতি ২য় পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Statistics_First.png",
+		"subject": "পরিসংখান ১ম পত্র"
+	},
+	{
+		"image": "https://d1yreyj8btzg0t.cloudfront.net/pro/Subject%20Icon/Update%20icon-20200219T075311Z-001/Update%20icon/Statistics_Second.png",
+		"subject": "পরিসংখান ২য় পত্র"
 	}
 ]
