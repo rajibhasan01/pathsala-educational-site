@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Admission from '../Admission/Admission';
+import ClassOneToTwelve from '../ClassOneToTwelve/ClassOneToTwelve';
 import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
-import Study from '../Study/Study';
+import FreeCourse from '../FreeCourse/FreeCourse';
+import Skills from '../Skills/Skills';
 
 const Dashboard = () => {
     const [subjects, setSubjects] = useState([]);
@@ -10,47 +13,32 @@ const Dashboard = () => {
         fetch('./data3.json')
             .then(res => res.json())
             .then(data => setSubjects(data));
-    }, []);
-
+    }, [subjects]);
+    const [school, admission] = subjects;
     return (
         <div className="card-design">
             <div className="container">
-                <DashBoardHeader />
-                <div className="my-5">
-                    <h3 className="fw-bold">সাধারণ</h3>
-                    <Row xs={1} md={2} lg={3} xl={4} className="g-3 my-2">
-                        {
-                            subjects?.slice(0, 5).map((subject, i) => <Study
-                                key={i}
-                                item={subject}
-                            />)
-                        }
-                    </Row>
-                </div>
+                <BrowserRouter>
+                    <DashBoardHeader />
+                    <Switch>
+                        <Route exact path="/dashboard">
+                            <ClassOneToTwelve subjects={school} />
+                        </Route>
+                        <Route path="/dashboard/school">
+                            <ClassOneToTwelve subjects={school} />
+                        </Route>
+                        <Route path="/dashboard/admission">
+                            <Admission subjects={admission} />
+                        </Route>
+                        <Route path="/dashboard/free">
+                            <FreeCourse />
+                        </Route>
 
-                <div className="my-5">
-                    <h3 className="fw-bold">মানবিক</h3>
-                    <Row xs={1} md={2} lg={3} xl={4} className="g-3 my-2">
-                        {
-                            subjects?.slice(13).map((subject, i) => <Study
-                                key={i}
-                                item={subject}
-                            />)
-                        }
-                    </Row>
-                </div>
 
-                <div className="my-5">
-                    <h3 className="fw-bold">বিজ্ঞান</h3>
-                    <Row xs={1} md={2} lg={3} xl={4} className="g-3 my-2">
-                        {
-                            subjects?.slice(5, 13).map((subject, i) => <Study
-                                key={i}
-                                item={subject}
-                            />)
-                        }
-                    </Row>
-                </div>
+                    </Switch>
+                </BrowserRouter>
+
+
 
             </div>
         </div>

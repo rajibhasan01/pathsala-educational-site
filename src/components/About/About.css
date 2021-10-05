@@ -1,3 +1,13 @@
 .text-justify{
     text-align: justify;
 }
+
+@media (max-width:480px){
+
+.aboutPage{
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+}

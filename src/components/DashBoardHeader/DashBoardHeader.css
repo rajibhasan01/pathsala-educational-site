@@ -29,3 +29,22 @@
     color: white;
     font-weight: 500;
 }
+
+@media (max-width:480px){
+    .displayDesign{
+        display: inline-block!important;
+    }
+    .dBlock{
+    padding: 10px 5px;
+    background-color: #d3d3d34d;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 95%;    
+    margin: auto;
+}
+.bgColor{
+    background-color: transparent;
+
+}
+}
