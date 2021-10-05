@@ -15,7 +15,7 @@ const Dashboard = () => {
         <div className="container">
             <div className="my-5">
                 <h1>General</h1>
-                <Row xs={1} md={4} className="g-3 my-2">
+                <Row xs={1} md={2} lg={4} className="g-3 my-2">
                     {
                         subjects?.slice(0, 5).map((subject, i) => <Study
                             key={i}

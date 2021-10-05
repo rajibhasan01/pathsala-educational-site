@@ -6,12 +6,12 @@ const Study = (props) => {
     const { subject, image } = props.item;
     return (
         <Col >
-            <Card>
-                <div className="bg-white p2 rounded d-flex align-items-center">
-                    <Image className="imagelogo my-auto" src={image}></Image>
+            <div className="border-0 ">
+                <div className="rounded border-0 d-flex px-2 align-items-center bg-color">
+                    <Image className="imagelogo p-2" src={image}></Image>
                     <h6 className="fw-bold fs-5"> {subject}</h6>
                 </div>
-            </Card>
+            </div>
         </Col >
     );
 };

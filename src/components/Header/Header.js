@@ -28,7 +28,7 @@ const Header = () => {
                         </ul>
                     </Nav>
 
-                    <Nav>
+                    <Nav className="ms-md-5 ps-md-5">
                         <Button variant="secondary" className="signIn">Sign in <i className="fas fa-sign-in-alt"></i></Button>
                     </Nav>
 
