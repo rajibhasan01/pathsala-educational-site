@@ -19,7 +19,7 @@ const SingleCourse = (props) => {
                         <p className="my-auto fw-bold">{enrolled} <small className="fw-normal">Enrolled</small></p>
 
                     </Card.Text>
-                    <Card.Text class="courseName">{courseName}</Card.Text>
+                    <Card.Text className="courseName">{courseName}</Card.Text>
                     <Card.Text >
                         <div className="d-flex justify-content-between">
                             <small><i className="fas fa-clock text-danger"></i> {time}</small>
