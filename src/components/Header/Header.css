@@ -47,6 +47,17 @@
     color:black;
 }
 
+.logout:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+.logoutName{
+    position: relative;
+    margin-left: -120px;
+    margin-top: 5px;
+}
+
 .selected{
     font-weight: 700;
     color: red!important;
@@ -74,5 +85,19 @@
 .signIn{
     margin:3%;
 }
+.logoutName{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    
+}
 
+}
+
+@media (max-width:1000px){
+.logoutName{
+    display: flex;
+    justify-content: space-around;
+    
+}
 }
