@@ -1,9 +1,15 @@
 import React from 'react';
-import { Nav, NavDropdown } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Button, Nav, NavDropdown } from 'react-bootstrap';
+import { NavLink, useHistory } from 'react-router-dom';
 import './DashBoardHeader.css';
 
 const DashBoardHeader = () => {
+    const history = useHistory();
+    const handleStudentProfile = () => {
+        history.push('/dashboard/stprofile');
+        // history.push('/stprofile')
+
+    }
     return (
         <div className="d-flex justify-content-between displayDesign">
             <div className="bgColor px-3 py-2 rounded-pill mt-4 ">
@@ -20,7 +26,8 @@ const DashBoardHeader = () => {
 
             </div>
             <div className=" mt-4 d-flex">
-                <Nav.Link className="text-muted fw-light">ক্লাস পরিবর্তন</Nav.Link>
+                <Nav.Link className="text-muted fw-light"><Button className="py-0"
+                    onClick={handleStudentProfile} variant="transparent"> ক্লাস পরিবর্তন</Button></Nav.Link>
                 <NavDropdown className="dropDown" title="তালিকা" id="basic-nav-dropdown">
                     <NavDropdown.Item>এসএসসি</NavDropdown.Item>
                     <NavDropdown.Item>এইচএসসি</NavDropdown.Item>

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -11,7 +10,7 @@ import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import Register from './components/Register/Register';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
 
 function App() {
   return (
@@ -45,9 +44,9 @@ function App() {
               <Register></Register>
             </Route>
 
-            <PrivateRoute path="/dashboard">
+            <Route path="/dashboard">
               <Dashboard></Dashboard>
-            </PrivateRoute>
+            </Route>
 
             <Route path="*">
               <NotFound></NotFound>

@@ -4,7 +4,9 @@ import Admission from '../Admission/Admission';
 import ClassOneToTwelve from '../ClassOneToTwelve/ClassOneToTwelve';
 import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
 import FreeCourse from '../FreeCourse/FreeCourse';
-import Skills from '../Skills/Skills';
+import Login from '../Login/Login';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import StudentProfile from '../StudentProfile/StudentProfile';
 
 const Dashboard = () => {
     const [subjects, setSubjects] = useState([]);
@@ -13,7 +15,7 @@ const Dashboard = () => {
         fetch('./data3.json')
             .then(res => res.json())
             .then(data => setSubjects(data));
-    }, [subjects]);
+    }, []);
     const [school, admission] = subjects;
     return (
         <div className="card-design">
@@ -33,7 +35,12 @@ const Dashboard = () => {
                         <Route path="/dashboard/free">
                             <FreeCourse />
                         </Route>
-
+                        <Route path="/login">
+                            <Login />
+                        </Route>
+                        <PrivateRoute path="/dashboard/stprofile">
+                            <StudentProfile></StudentProfile>
+                        </PrivateRoute>
 
                     </Switch>
                 </BrowserRouter>

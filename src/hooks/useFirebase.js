@@ -17,14 +17,8 @@ const useFirebase = () => {
     const fbProvider = new FacebookAuthProvider();
 
     const googleSignIn = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user.displayName);
-            })
-            .catch(error => {
-                setError(error.message);
-                console.log(error.message);
-            });
+        return signInWithPopup(auth, googleProvider)
+
     };
 
     const githubSignIn = () => {
@@ -81,7 +75,8 @@ const useFirebase = () => {
         setPassword(event.target.value);
     };
 
-    const handleLogin = (auth, email, password) => {
+    const handleLogin = (event) => {
+        event.preventDefault();
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 console.log(email, password);

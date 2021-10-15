@@ -17,7 +17,7 @@ const Footer = () => {
                                     <span className="visually-hidden"></span>
                                 </div></h5>
                                 <p className="card-text text-secondary">সমস্যার ক্ষেত্রে: ০১৭৫৪-০৬৩৭১২  (সকাল ১০টা - রাত ১০টা) <br /> অথবা মেসেজ করুন PSHelp to ২৬৯৬৯ (২৪ x ৭)</p>
-                                <a href id="bttnn">ডাউনলোড</a>
+                                <a id="bttnn">ডাউনলোড</a>
                             </div>
                         </div>
 
