@@ -14,7 +14,7 @@ const Register = () => {
                 <span className="text-red">পাঠশালা - সবার জন্য শিক্ষা </span>
             </p>
             <div className="container d-flex mb-5 justify-content-center align-content-center">
-                <div className="register-bg mt-3 mb-5 mx-5 px-3 py-5 rounded">
+                <div className="register-bg mt-3 mb-5 px-md-3 py-5 rounded">
                     <div className="register-sidebox text-center">
                         <Image src={picture} className="register-picture" />
                         <p className="fs-6 text-white pt-3"><i className="fas fa-user-shield fs-5 pe-1 text-dark"></i> Create Account</p>
@@ -34,7 +34,7 @@ const Register = () => {
                     </div>
 
                     <div className="register-form my-3">
-                        <div className="bg-transparent mx-5 p-5 rounded login-form">
+                        <div className="bg-transparent mx-5 p-md-5 p-3 rounded login-form register-desgin">
                             <h2 className="text-dark text-center pb-3">Register <i className="fas fa-sign-in-alt fs-3"></i></h2>
                             <form onSubmit={handleLogin}>
                                 <input className="border rounded w-100 py-1 ps-2 my-1" type="text" name="" id="" placeholder="Your name" />
