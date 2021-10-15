@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import './Register.css';
@@ -8,8 +8,9 @@ import { useHistory, useLocation } from 'react-router';
 
 
 const Register = () => {
-    const { getEmail, getPassword, handleRegistation, googleSignIn, fbSignIn, githubSignIn, handleNameChange, handlePhoneChange, getRePassword, error, setError } = useAuth();
+    const { getEmail, getPassword, handleRegistation, googleSignIn, fbSignIn, githubSignIn, handleNameChange, handlePhoneChange, getRePassword, errors } = useAuth();
 
+    const [error, setError] = useState('');
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -18,6 +19,7 @@ const Register = () => {
         googleSignIn()
             .then(result => {
                 history.push(redirect_uri);
+                setError('');
             })
             .catch(error => {
                 console.log(error.message);
@@ -30,6 +32,7 @@ const Register = () => {
         githubSignIn()
             .then(result => {
                 history.push(redirect_uri);
+                setError('');
             })
             .catch(error => {
                 console.log(error.message);
@@ -41,13 +44,13 @@ const Register = () => {
         fbSignIn()
             .then(result => {
                 history.push(redirect_uri);
+                setError('');
             })
             .catch(error => {
                 console.log(error.message);
                 setError(error.message);
             })
     };
-
 
 
     return (
@@ -57,6 +60,9 @@ const Register = () => {
                 <span className="text-red">পাঠশালা - সবার জন্য শিক্ষা </span>
                 {
                     !error.length || <small className="fw-light text-muted"><br />{error}</small>
+                }
+                {
+                    !errors.length || <small className="fw-light text-muted"><br />{errors}</small>
                 }
             </p>
 

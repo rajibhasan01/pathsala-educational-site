@@ -9,7 +9,7 @@ const useFirebase = () => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [user, setUser] = useState({});
-    const [error, setError] = useState('');
+    const [errors, setError] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [repassword, setRePassword] = useState('');
@@ -18,6 +18,7 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
     const fbProvider = new FacebookAuthProvider();
+
 
     const googleSignIn = () => {
         return signInWithPopup(auth, googleProvider)
@@ -33,6 +34,10 @@ const useFirebase = () => {
         return signInWithPopup(auth, fbProvider)
     };
 
+    const handleManulaLogin = () => {
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+
     const logOut = () => {
         signOut(auth)
             .then(() => {
@@ -41,7 +46,6 @@ const useFirebase = () => {
 
             })
             .catch(error => {
-                setError(error.message);
                 console.log(error.message);
             });
     };
@@ -51,14 +55,12 @@ const useFirebase = () => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
-
             }
         });
     });
 
     const getEmail = (event) => {
         setEmail(event.target.value);
-        console.log(event.target.value);
     };
 
     const getPassword = (event) => {
@@ -74,7 +76,6 @@ const useFirebase = () => {
 
     const handlePhoneChange = (event) => {
         setPhone(event.target.value);
-        console.log(event.target.value);
     }
 
     const handleRegistation = (event) => {
@@ -125,7 +126,7 @@ const useFirebase = () => {
                 console.log('username ', error.message)
             })
 
-    }
+    };
 
 
 
@@ -141,9 +142,11 @@ const useFirebase = () => {
         handleRegistation,
         handleNameChange,
         handlePhoneChange,
+        handleManulaLogin,
         user,
         setError,
-        error
+        errors,
+        name
 
     }
 
