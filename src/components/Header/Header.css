@@ -94,7 +94,16 @@
 
 }
 
-@media (max-width:1000px){
+@media (min-width:481px) and (max-width:800px){
+.logoutName{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20%;
+    
+}
+}
+
+@media (min-width:801px) and (max-width:1000px){
 .logoutName{
     display: flex;
     justify-content: space-around;

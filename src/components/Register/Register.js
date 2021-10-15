@@ -4,15 +4,62 @@ import useAuth from '../../hooks/useAuth';
 import './Register.css';
 import picture from '../../image/login3.png';
 import { Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router';
+
 
 const Register = () => {
-    const { getEmail, getPassword, handleLogin, handleGoogleLogin, fbSignIn, githubSignIn } = useAuth();
+    const { getEmail, getPassword, handleRegistation, googleSignIn, fbSignIn, githubSignIn, handleNameChange, handlePhoneChange, getRePassword, error, setError } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
+    const handleGoogleLogin = () => {
+        googleSignIn()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+            .catch(error => {
+                console.log(error.message);
+                setError(error.message);
+            })
+
+    };
+
+    const handleGitLogin = () => {
+        githubSignIn()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+            .catch(error => {
+                console.log(error.message);
+                setError(error.message);
+            })
+    };
+
+    const handleFbLogin = () => {
+        fbSignIn()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+            .catch(error => {
+                console.log(error.message);
+                setError(error.message);
+            })
+    };
+
+
+
     return (
         <div className="container text-center mt-3">
             <p className="fs-5 fw-light text-muted">ফ্রি রেজিস্টার করে,
                 <span className="text-success "> শুরু করো তোমার জার্নি</span> <br />
                 <span className="text-red">পাঠশালা - সবার জন্য শিক্ষা </span>
+                {
+                    !error.length || <small className="fw-light text-muted"><br />{error}</small>
+                }
             </p>
+
             <div className="container d-flex mb-5 justify-content-center align-content-center">
                 <div className="register-bg mt-3 mb-5 px-md-3 py-5 rounded">
                     <div className="register-sidebox text-center">
@@ -39,16 +86,16 @@ const Register = () => {
                     <div className="register-form my-3">
                         <div className="bg-transparent mx-5 p-md-5 p-3 rounded login-form register-desgin">
                             <h2 className="text-dark text-center pb-3">Register <i className="fas fa-sign-in-alt fs-3"></i></h2>
-                            <form onSubmit={handleLogin}>
-                                <input className="border rounded w-100 py-1 ps-2 my-1" type="text" name="" id="" placeholder="Your name" />
+                            <form onSubmit={handleRegistation}>
+                                <input onBlur={handleNameChange} className="border rounded w-100 py-1 ps-2 my-1" type="text" name="" id="" placeholder="Your name" required />
                                 <br />
-                                <input onBlur={getEmail} className="border rounded w-100 py-1 ps-2 my-2" type="email" name="" id="" placeholder="Your email" />
+                                <input onBlur={getEmail} className="border rounded w-100 py-1 ps-2 my-2" type="email" id="" placeholder="Your email" required />
                                 <br />
-                                <input onBlur={getPassword} className="border rounded w-100 py-1 ps-2 my-1" type="password" name="" id="" placeholder="Your password" />
+                                <input onBlur={getPassword} className="border rounded w-100 py-1 ps-2 my-1" type="password" name="" id="" placeholder="Your password" required />
                                 <br />
-                                <input onBlur={getPassword} className="border rounded w-100 py-1 ps-2 my-2" type="password" name="" id="" placeholder="Re-enter password" />
+                                <input onBlur={getRePassword} className="border rounded w-100 py-1 ps-2 my-2" type="password" name="" id="" placeholder="Re-enter password" required />
                                 <br />
-                                <input className="border rounded w-100 py-1 ps-2 my-1" type="text" name="" id="" placeholder="Phone number" />
+                                <input onBlur={handlePhoneChange} className="border rounded w-100 py-1 ps-2 my-1" type="text" name="" id="" placeholder="Phone number" required />
                                 <br />
                                 <br />
                                 <button type="submit" className="w-100 btn btn-design-register border-0 rounded py-1">Register</button>
@@ -62,8 +109,8 @@ const Register = () => {
 
                         <div className="text-center ">
                             <i onClick={handleGoogleLogin} className="fab fa-google text-dark fs-4 bg-transparent m-2"></i>
-                            <i onClick={fbSignIn} className="fab fa-facebook-square text-dark fs-4 m-2"></i>
-                            <i onClick={githubSignIn} className="fab fa-github-square text-dark fs-4 m-2"></i>
+                            <i onClick={handleFbLogin} className="fab fa-facebook-square text-dark fs-4 m-2"></i>
+                            <i onClick={handleGitLogin} className="fab fa-github-square text-dark fs-4 m-2"></i>
                         </div>
 
                         <p className="fs-6 text-white pt-3"><Link className="text-decoration-none text-primary" to="/login">Login! </Link> if have a account</p>
