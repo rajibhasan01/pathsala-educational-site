@@ -20,16 +20,19 @@ const Register = () => {
                         <p className="fs-6 text-white pt-3"><i className="fas fa-user-shield fs-5 pe-1 text-dark"></i> Create Account</p>
                         <small>Create apps, connect databases <br /> & add-on services & collaborate <br /> on your apps, for free.</small>
 
-                        <p className="fs-6 text-white pt-3"><i className="fas fa-sign-in-alt fs-5 pe-1 text-dark"></i> Signup With</p>
-                        <small>Signup using below application</small>
+                        <div className="d-none d-md-block">
+                            <p className="fs-6 text-white pt-3"><i className="fas fa-sign-in-alt fs-5 pe-1 text-dark"></i> Signup With</p>
+                            <small>Signup using below application</small>
 
-                        <div className="text-center ">
-                            <i onClick={handleGoogleLogin} className="fab fa-google text-dark fs-4 bg-transparent m-2"></i>
-                            <i onClick={fbSignIn} className="fab fa-facebook-square text-dark fs-4 m-2"></i>
-                            <i onClick={githubSignIn} className="fab fa-github-square text-dark fs-4 m-2"></i>
+                            <div className="text-center ">
+                                <i onClick={handleGoogleLogin} className="fab fa-google text-dark fs-4 bg-transparent m-2"></i>
+                                <i onClick={fbSignIn} className="fab fa-facebook-square text-dark fs-4 m-2"></i>
+                                <i onClick={githubSignIn} className="fab fa-github-square text-dark fs-4 m-2"></i>
+                            </div>
+
+                            <p className="fs-6 text-white pt-3"><Link className="text-decoration-none text-primary" to="/login">Login! </Link> if have a account</p>
+
                         </div>
-
-                        <p className="fs-6 text-white pt-3"><Link className="text-decoration-none text-primary" to="/login">Login! </Link> if have a account</p>
 
                     </div>
 
@@ -53,6 +56,20 @@ const Register = () => {
                             <small className="text-dark d-block mt-3 texr-center ">Signing up signify that you<br /> have read & agree to the<br /><Link to="/about"> Terms of Service</Link></small>
                         </div>
                     </div>
+                    <div className="d-md-none">
+                        <p className="fs-6 text-white pt-3"><i className="fas fa-sign-in-alt fs-5 pe-1 text-dark"></i> Signup With</p>
+                        <small>Signup using below application</small>
+
+                        <div className="text-center ">
+                            <i onClick={handleGoogleLogin} className="fab fa-google text-dark fs-4 bg-transparent m-2"></i>
+                            <i onClick={fbSignIn} className="fab fa-facebook-square text-dark fs-4 m-2"></i>
+                            <i onClick={githubSignIn} className="fab fa-github-square text-dark fs-4 m-2"></i>
+                        </div>
+
+                        <p className="fs-6 text-white pt-3"><Link className="text-decoration-none text-primary" to="/login">Login! </Link> if have a account</p>
+
+                    </div>
+
                 </div>
             </div>
         </div>

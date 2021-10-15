@@ -48,6 +48,9 @@
    border-radius: 10px;
 
 }
+.register-picture{
+    width: 250px;
+}
 }
 
 @media (max-width:499px){
@@ -69,5 +72,8 @@
 }
 .register-desgin{
     margin: 0!important;
+}
+.register-picture{
+    width: 230px;
 }
 }
