@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Admission from '../Admission/Admission';
 import ClassOneToTwelve from '../ClassOneToTwelve/ClassOneToTwelve';
-import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
 import FreeCourse from '../FreeCourse/FreeCourse';
 import Login from '../Login/Login';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
@@ -21,7 +20,6 @@ const Dashboard = () => {
         <div className="card-design">
             <div className="container">
                 <BrowserRouter>
-                    <DashBoardHeader />
                     <Switch>
                         <Route exact path="/dashboard">
                             <ClassOneToTwelve subjects={school} />
@@ -41,11 +39,8 @@ const Dashboard = () => {
                         <PrivateRoute path="/dashboard/stprofile">
                             <StudentProfile></StudentProfile>
                         </PrivateRoute>
-
                     </Switch>
                 </BrowserRouter>
-
-
 
             </div>
         </div>

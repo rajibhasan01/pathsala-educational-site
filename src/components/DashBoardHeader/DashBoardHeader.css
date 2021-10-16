@@ -30,18 +30,40 @@
     font-weight: 500;
 }
 
-@media (max-width:480px){
+@media (max-width:499px){
     .displayDesign{
-        display: inline-block!important;
+        display: inline!important;
     }
     .dBlock{
-    padding: 10px 5px;
     background-color: #d3d3d34d;
     color: black;
     font-weight: 500;
     border-radius: 10px;
-    width: 95%;    
-    margin: auto;
+    width: 30%;    
+    margin: 1%;
+    display: inline-block;
+    text-align: center;
+}
+.bgColor{
+    background-color: transparent;
+
+}
+}
+
+@media (min-width:500px) and (max-width:800px){
+    .displayDesign{
+        display: inline!important;
+    }
+    .dBlock{
+    background-color: #d3d3d34d;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 30%;    
+    margin: 1%;
+    display: inline-block;
+    padding: 0!important;
+    text-align: center;
 }
 .bgColor{
     background-color: transparent;
