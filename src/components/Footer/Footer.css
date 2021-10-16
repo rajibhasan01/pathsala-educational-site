@@ -78,3 +78,8 @@
     flex-wrap: wrap;
 
 }
+
+.payWith{
+    width: 280px;
+    height: 120px;
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../../last_logo.png';
-import { footer } from 'react-bootstrap';
+import payWith from '../../image/pay_with.png';
+import { Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -17,14 +19,14 @@ const Footer = () => {
                                     <span className="visually-hidden"></span>
                                 </div></h5>
                                 <p className="card-text text-secondary">সমস্যার ক্ষেত্রে: ০১৭৫৪-০৬৩৭১২  (সকাল ১০টা - রাত ১০টা) <br /> অথবা মেসেজ করুন PSHelp to ২৬৯৬৯ (২৪ x ৭)</p>
-                                <a id="bttnn">ডাউনলোড</a>
+                                <Link to="/about" className="text-decoration-none" id="bttnn">About us</Link>
                             </div>
                         </div>
 
 
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-8 email-box ps-lg-5">
-                        <p className="text-secondary text-start">সর্বশেষ রিলিজ এবং আরো খবর পেতে সাইন আপ করুন ...</p>
+                        <p className="text-secondary text-start mt-md-5">সর্বশেষ রিলিজ এবং আরো খবর পেতে সাইন আপ করুন ...</p>
                         <div className="input-group mb-3">
                             <input type="text" className="form-control bg-transparent border-top border-start border-bottom " placeholder="তোমার ইমেইল টাইপ করো" aria-label="Recipient's username" aria-describedby="button-addons" />
                             <button className="btn btn-outline-secondary border" type="button" id="button-addons"> <div><i className="far fa-envelope"></i></div></button>
@@ -39,6 +41,7 @@ const Footer = () => {
                             <i className="fab fa-tumblr-square ic"></i>
 
                         </div>
+                        <Image src={payWith} className="payWith mt-2 mt-md-0 ms-md-auto me-md-0" />
 
                     </div>
                 </div>
