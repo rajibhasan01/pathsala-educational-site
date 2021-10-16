@@ -66,8 +66,8 @@ const Register = () => {
                 }
             </p>
 
-            <div className="container d-flex mb-5 justify-content-center align-content-center">
-                <div className="register-bg mt-3 mb-5 px-md-3 py-5 rounded">
+            <div className="container d-flex justify-content-center align-content-center">
+                <div className="register-bg mt-3 mb-3 px-md-3 py-5 rounded">
                     <div className="register-sidebox text-center">
                         <Image src={picture} className="register-picture" />
                         <p className="fs-6 text-white pt-3"><i className="fas fa-user-shield fs-5 pe-1 text-dark"></i> Create Account</p>
@@ -125,6 +125,7 @@ const Register = () => {
 
                 </div>
             </div>
+            <p className="pb-5 mb-3">Already have an account? <Link className="text-decoration-none text-primary" to="/login">sign in</Link></p>
         </div>
 
 
