@@ -30,7 +30,7 @@ const LearnYourSelf = () => {
                     }
                 </Row>
                 <div className="mt-5">
-                    <Image className="w-50" src={bg}></Image>
+                    <Image className="home-banner-image" src={bg}></Image>
                 </div>
             </Card>
         </div>

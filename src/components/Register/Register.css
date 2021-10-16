@@ -33,6 +33,11 @@
     font-weight: 600;
 }
 
+.home-banner-image{
+    width: 50%;
+    margin-top: -2%;
+}
+
 @media (min-width:500px) and (max-width:800px){
 .register-sidebox{
     position: relative;
@@ -50,6 +55,10 @@
 }
 .register-picture{
     width: 250px;
+}
+.home-banner-image{
+    width: 90%;
+    margin-top: -5%;
 }
 }
 
@@ -75,5 +84,9 @@
 }
 .register-picture{
     width: 230px;
+}
+.home-banner-image{
+    width: 100%;
+    margin-top: -5%;
 }
 }
