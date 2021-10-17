@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import logo from '../../last_logo.png';
 import payWith from '../../image/pay_with.png';
+import googlePlay from '../../image/google_play.png'
 import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -41,7 +42,12 @@ const Footer = () => {
                             <i className="fab fa-tumblr-square ic"></i>
 
                         </div>
-                        <Image src={payWith} className="payWith mt-2 mt-md-0 ms-md-auto me-md-0" />
+
+                        <div className="d-md-flex justify-content-between">
+                            <Image src={googlePlay} className="googlePlay mt-2 py-3 pe-md-5" />
+
+                            <Image src={payWith} className="payWith mt-2 mt-md-0 ms-md-auto me-md-0" />
+                        </div>
 
                     </div>
                 </div>
