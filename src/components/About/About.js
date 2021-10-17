@@ -25,13 +25,13 @@ const About = () => {
 
             <div className="row my-5 px-md-5">
 
-                <div className="col-md-6 ps-5 py-5 mx-auto">
+                <div className="col-md-6  py-5 mx-auto text-center">
                     <Image className="w-75" src={image2}></Image>
                 </div>
 
                 <div className="col-md-6 px-5 text-justify">
-                    <h5 className="text-secondary my-md-5">আমাদের পাঠশালা প্ল্যাটফর্ম থেকে ১০ হাজারের বেশী লার্নার প্রফেশনাল স্কিল অর্জন করে ফ্রীল্যান্সিং ক্যারিয়ার ও নিজের অনলাইন বিজনেস সফলভাবে গড়ে তুলছেন। আমাদের ৩০+ অনলাইন কোর্স আপনি বাংলাদেশের যেকোনো প্রান্তে বসে করতে পারবেন, প্রতিটি কোর্সের জন্য আলাদা আলাদা ফেইসবুক গ্রুপে প্রশ্ন করতে পারবেন এবং উক্ত বিষয়ে দক্ষ হয়ে উঠবেন। আর সেই দক্ষতা কাজে লাগিয়ে সহজেই অনলাইন মার্কেটপ্লেস থেকে উপার্জন শুরু করতে পারবেন। <br /> <br /> যেকোনো প্রয়োজনে কল করুন <br />
-                        ০১৭৫৪-০৬৩৭১২ 🙂</h5>
+                    <h5 className="text-secondary my-md-5 fw-normal">More than 10,000 learners are successfully building their freelance career and own online business by acquiring professional skills from our Pathshala platform. Our 30+ online courses you can sit in any part of Bangladesh, ask questions in a separate Facebook group for each course and become proficient in the subject. And you can easily start earning from the online marketplace by using that skill. <br /> <br /> If you have any inquiries you may call <br />
+                        01754-063712 🙂</h5>
                 </div>
             </div>
 

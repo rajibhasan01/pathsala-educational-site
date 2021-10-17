@@ -5,6 +5,7 @@ import ClassOneToTwelve from '../ClassOneToTwelve/ClassOneToTwelve';
 import FreeCourse from '../FreeCourse/FreeCourse';
 import Login from '../Login/Login';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Register from '../Register/Register';
 import StudentProfile from '../StudentProfile/StudentProfile';
 
 const Dashboard = () => {
@@ -24,18 +25,27 @@ const Dashboard = () => {
                         <Route exact path="/dashboard">
                             <ClassOneToTwelve subjects={school} />
                         </Route>
+
                         <Route path="/dashboard/school">
                             <ClassOneToTwelve subjects={school} />
                         </Route>
+
                         <Route path="/dashboard/admission">
                             <Admission subjects={admission} />
                         </Route>
+
                         <Route path="/dashboard/free">
                             <FreeCourse />
                         </Route>
+
                         <Route path="/login">
                             <Login />
                         </Route>
+
+                        <Route path="/register">
+                            <Register></Register>
+                        </Route>
+
                         <PrivateRoute path="/dashboard/stprofile">
                             <StudentProfile></StudentProfile>
                         </PrivateRoute>
