@@ -16,3 +16,16 @@
     border: 2px solid #059770;
     color:#0e9b75;
 }
+
+#NextBtn:hover{
+    padding: 8px 18px;
+    border: 0;
+    color: white;
+    background: #1dd1a1;
+}
+#NextBtn {
+    background: transparent;
+    padding: 6px 16px;
+    border: 2px solid #059770;
+    color:#0e9b75;
+}
