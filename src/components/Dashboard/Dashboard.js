@@ -12,7 +12,7 @@ const Dashboard = () => {
     const [subjects, setSubjects] = useState([]);
 
     useEffect(() => {
-        fetch('./data3.json')
+        fetch('/data3.json')
             .then(res => res.json())
             .then(data => setSubjects(data));
     }, []);
