@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import Admission from '../Admission/Admission';
 import ClassOneToTwelve from '../ClassOneToTwelve/ClassOneToTwelve';
 import FreeCourse from '../FreeCourse/FreeCourse';
@@ -9,6 +10,7 @@ import Register from '../Register/Register';
 import StudentProfile from '../StudentProfile/StudentProfile';
 
 const Dashboard = () => {
+    useDocumentTitle('Dashboard');
     const [subjects, setSubjects] = useState([]);
 
     useEffect(() => {

@@ -4,8 +4,11 @@ import image from '../../image/image_bd.png';
 import image2 from '../../image/about.png';
 import './About.css';
 import myImage from '../../image/my-bg-rajib.png';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 const About = () => {
+    useDocumentTitle('About 👻')
+
     return (
         <div className="container">
             <div className="text-center mt-5">

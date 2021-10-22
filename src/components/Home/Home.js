@@ -8,11 +8,13 @@ import LearnYourSelf from '../LearnYourSelf/LearnYourSelf';
 import useData from '../useData/useData';
 import Carosoul from '../Carosoul/Carosoul';
 import Career from '../Career/Career';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 
 const property = [[accademi, 'ক্লাস ১-১২'], [admission, 'ভর্তি পরীক্ষা'], [skill, 'স্কিল ডেভেলপমেন্ট']];
 
 const Home = () => {
+    useDocumentTitle('পাঠশালা')
     const [items, setItems] = useData();
 
     return (

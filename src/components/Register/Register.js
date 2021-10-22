@@ -5,9 +5,11 @@ import './Register.css';
 import picture from '../../image/login3.png';
 import { Link } from 'react-router-dom';
 import { useHistory, useLocation } from 'react-router';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 
 const Register = () => {
+    useDocumentTitle('Register')
     const { getEmail, getPassword, handleRegistation, googleSignIn, fbSignIn, githubSignIn, handleNameChange, handlePhoneChange, getRePassword, errors } = useAuth();
 
     const [error, setError] = useState('');

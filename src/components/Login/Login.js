@@ -5,9 +5,11 @@ import { useHistory, useLocation } from 'react-router';
 import loginPhoto from '../../image/login1.png';
 import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 
 const Login = () => {
+    useDocumentTitle('Login')
     const { googleSignIn, githubSignIn, fbSignIn, handleManulaLogin, getEmail, getPassword } = useAuth();
 
     const [error, setError] = useState('');
